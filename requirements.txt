@@ -5,4 +5,3 @@ requests
 gunicorn
 whitenoise
 dj-database-url
-pip install django-anymail
