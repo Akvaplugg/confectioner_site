@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Каталог цен{% endblock %}
+{% block content %}
+<section class="catalog">
+    <div class="container">
+        <h1 class="section-title">Каталог с ценами</h1>
+        <div class="catalog__categories">
+            <a href="?category=all" class="category-link active">Все</a>
+            {% for value, name in categories %}
+            <a href="?category={{ value }}" class="category-link">{{ name }}</a>
+            {% endfor %}
+        </div>
+        <div class="catalog__grid">
+            {% for product in products %}
+            <div class="product-card">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.weight }}</p>
+                <p class="price">{{ product.price }} ₽</p>
+                <a href="/order/" class="btn btn--small">Заказать</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

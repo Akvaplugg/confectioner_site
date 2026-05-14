@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Портфолио{% endblock %}
+{% block content %}
+<section class="portfolio">
+    <div class="container">
+        <h1 class="section-title">Наши работы</h1>
+        <div class="portfolio__filter">
+            <button class="filter-btn active" data-category="all">Все</button>
+            {% for value, name in categories %}
+            <button class="filter-btn" data-category="{{ value }}">{{ name }}</button>
+            {% endfor %}
+        </div>
+        <div class="portfolio__grid">
+            {% for work in works %}
+            <div class="portfolio__item" data-category="{{ work.category }}">
+                {% if work.image %}
+                <img src="{{ work.image.url }}" alt="{{ work.title }}" loading="lazy">
+                {% else %}
+                <img src="{% static 'images/placeholder.jpg' %}" alt="Нет фото">
+                {% endif %}
+                <div class="portfolio__overlay">
+                    <h3>{{ work.title }}</h3>
+                    <p class="work-description">{{ work.description|truncatechars:80 }}</p>
+                </div>
+            </div>
+            {% empty %}
+            <p style="text-align:center; grid-column:1/-1;">Нет работ. Добавьте через <a href="/admin">админку</a></p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

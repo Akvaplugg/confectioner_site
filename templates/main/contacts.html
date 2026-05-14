@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Контакты{% endblock %}
+{% block content %}
+<section class="contacts-page">
+    <div class="container">
+        <h1 class="section-title">Контакты</h1>
+        <div class="contacts-grid">
+            <a href="https://instagram.com/confectioner" target="_blank" class="social-link">📷 Instagram</a>
+            <a href="https://vk.com/confectioner" target="_blank" class="social-link">💬 VK</a>
+            <a href="https://t.me/confectioner" target="_blank" class="social-link">📱 Telegram (написать)</a>
+            <a href="mailto:confectioner@example.com" class="social-link">✉️ confectioner@example.com</a>
+        </div>
+        
+        <!-- Карта (опционально) -->
+        <div class="map-container">
+            <h3>Самовывоз</h3>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A123456789&source=constructor" width="100%" height="300" frameborder="0"></iframe>
+            <p>г. Москва, ул. Кондитерская, д. 15</p>
+        </div>
+    </div>
+</section>
+
+<style>
+.contacts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+.social-link {
+    padding: 15px 30px;
+    background: #D4A5A5;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.social-link:hover {
+    background: #c08a8a;
+    transform: translateY(-3px);
+}
+.map-container {
+    margin-top: 40px;
+    text-align: center;
+}
+.map-container h3 {
+    margin-bottom: 15px;
+}
+.map-container iframe {
+    border-radius: 20px;
+    max-width: 600px;
+}
+</style>
+{% endblock %}
