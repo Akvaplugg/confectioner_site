@@ -1,0 +1,7 @@
+Django==5.2.12
+psycopg2-binary
+Pillow
+requests
+gunicorn
+whitenoise
+dj-database-url
