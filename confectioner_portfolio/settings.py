@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -47,16 +48,22 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'confectioner_portfolio.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'confectioner_db',
-        'USER': 'confectioner_user',
-        'PASSWORD': 'confectioner123',
-        'HOST': 'localhost',
-        'PORT': '5432',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
     }
-}
+else:
+    # Локально (твой компьютер)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'confectioner_db',
+            'USER': 'confectioner_user',
+            'PASSWORD': 'confectioner123',
+            'HOST': 'localhost',
+            'PORT': '5432',
+        }
+    }
 
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
