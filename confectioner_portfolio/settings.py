@@ -85,3 +85,6 @@ EMAIL_HOST_USER = 'conditersemen@gmail.com'
 EMAIL_HOST_PASSWORD = 'cttm dvqz dtbz euao'  
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 CONFECTIONER_EMAIL = 'conditersemen@gmail.com'
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+ALLOWED_HOSTS = ['*']
