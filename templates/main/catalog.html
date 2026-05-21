@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Каталог цен{% endblock %}
+{% block title %}Прайс-лист на авторские торты Рената Агзамова{% endblock %}
 {% block content %}
 <section class="catalog">
     <div class="container">
-        <h1 class="section-title">Каталог с ценами</h1>
+        <h1 class="section-title">Прайс-лист (от $10,000)</h1>
+        <p style="text-align: center; margin-bottom: 30px;">Стоимость зависит от сложности, размера и материалов. Все цены указаны за 1 кг готового изделия.</p>
         <div class="catalog__categories">
             <a href="?category=all" class="category-link active">Все</a>
             {% for value, name in categories %}
@@ -18,7 +19,7 @@
                 <h3>{{ product.name }}</h3>
                 <p>{{ product.weight }}</p>
                 <p class="price">{{ product.price }} ₽</p>
-                <a href="/order/" class="btn btn--small">Заказать</a>
+                <a href="/order/" class="btn btn--small">Обсудить заказ</a>
             </div>
             {% endfor %}
         </div>

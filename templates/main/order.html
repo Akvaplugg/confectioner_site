@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Заказ десерта{% endblock %}
+{% block title %}Заявка на авторский торт | Renat Agzamov{% endblock %}
 {% block content %}
 <section class="order-page">
     <div class="container">
-        <h1 class="section-title">✨ Создайте свой десерт ✨</h1>
-        <p style="text-align: center; margin-bottom: 40px;">Заполните форму, и я свяжусь с вами для обсуждения деталей</p>
+        <h1 class="section-title">✨ Заявка на создание шедевра ✨</h1>
+        <p style="text-align: center; margin-bottom: 40px;">Заполните форму, и моя команда свяжется с вами для обсуждения деталей вашего уникального торта</p>
         
         <div id="orderFormContainer">
             <form id="orderForm" method="post" enctype="multipart/form-data" class="beautiful-form">
@@ -29,15 +29,15 @@
                 </div>
                 
                 <div class="form-group">
-                    <label>🍰 Что хотите заказать? <span class="required">*</span></label>
-                    <textarea name="order_details" id="id_order_details" placeholder="Например: торт на день рождения, 2 кг, бисквит шоколадный, крем сливочный, декор ягодами" rows="5" required></textarea>
+                    <label>🍰 Идея вашего торта <span class="required">*</span></label>
+                    <textarea name="order_details" id="id_order_details" placeholder="Например: торт в виде машины, 50 кг, высота 2 метра, фотореализм, важная дата — юбилей компании" rows="5" required></textarea>
                 </div>
                 
                 <div class="form-row">
                     <div class="form-group">
                         <label>📅 Дата события <span class="required">*</span></label>
                         <input type="date" name="event_date" id="id_event_date" required>
-                        <small>Укажите дату, к которой нужен десерт</small>
+                        <small>Укажите дату, к которой нужен шедевр (чем раньше, тем лучше)</small>
                     </div>
                     
                     <div class="form-group">
@@ -47,12 +47,12 @@
                             <label for="id_reference_image" class="file-label">📎 Выбрать фото</label>
                             <span class="file-name">Файл не выбран</span>
                         </div>
-                        <small>Пример того, как вы хотите (необязательно)</small>
+                        <small>Пример того, как вы хотите (или пример стиля)</small>
                     </div>
                 </div>
                 
                 <button type="submit" class="btn-submit">
-                    <span>📨 Отправить заявку</span>
+                    <span>🚀 Отправить заявку Ренату</span>
                 </button>
             </form>
         </div>
@@ -60,9 +60,9 @@
         <div id="successMessage" style="display: none;">
             <div class="success-card">
                 <div class="success-icon">🎉</div>
-                <h3>Спасибо, Илья свяжется с вами!</h3>
-                <p>Ваш заказ принят. Я отвечу вам в ближайшее время для обсуждения всех деталей.</p>
-                <button onclick="location.reload()" class="btn btn--secondary">📝 Заказать ещё</button>
+                <h3>Заявка принята!</h3>
+                <p>Команда Рената Агзамова свяжется с вами в ближайшее время для обсуждения деталей вашего будущего шедевра.</p>
+                <button onclick="location.reload()" class="btn btn--secondary">📝 Создать ещё заявку</button>
             </div>
         </div>
         
@@ -214,7 +214,6 @@
 </style>
 
 <script>
-// Показ имени выбранного файла
 document.getElementById('id_reference_image')?.addEventListener('change', function(e) {
     const fileName = e.target.files[0]?.name || 'Файл не выбран';
     document.querySelector('.file-name').textContent = fileName;

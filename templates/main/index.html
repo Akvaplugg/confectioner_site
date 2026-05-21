@@ -1,158 +1,143 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}Главная{% endblock %}
+{% block title %}Renat Agzamov — Самый дорогой кондитер мира{% endblock %}
 {% block content %}
 
-<!-- Hero секция - большой и красивый -->
+<!-- Hero секция -->
 <section class="hero-new">
     <div class="container">
         <div class="hero-new__content">
             <div class="hero-new__text">
-                <span class="hero-new__badge">🍰 Авторская кондитерская</span>
-                <h1 class="hero-new__title">Илья <span class="accent">Кондитерский</span></h1>
-                <p class="hero-new__desc">Создаю десерты, которые <br> становятся главным украшением вашего праздника</p>
+                <span class="hero-new__badge">🥊 Легенда кондитерского мира</span>
+                <h1 class="hero-new__title">Renat <span class="accent">Agzamov</span></h1>
+                <p class="hero-new__desc">Создаю торты-гиганты, которые становятся<br> главным событием любого праздника</p>
                 <div class="hero-new__buttons">
-                    <a href="/portfolio" class="btn-gold">Смотреть работы →</a>
-                    <a href="/order/" class="btn-outline">Заказать десерт</a>
+                    <a href="/portfolio" class="btn-gold">Смотреть шедевры →</a>
+                    <a href="/order/" class="btn-outline">Обсудить заказ</a>
                 </div>
                 <div class="hero-new__stats">
                     <div class="stat">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">лет опыта</span>
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">лет в кондитерии</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">200+</span>
-                        <span class="stat-label">счастливых клиентов</span>
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">тортов-гигантов</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">уникальных десертов</span>
+                        <span class="stat-number">$500k</span>
+                        <span class="stat-label">рекордная стоимость</span>
                     </div>
                 </div>
             </div>
             <div class="hero-new__image">
                 <div class="hero-image-wrapper">
-                    <img src="{% static 'images/hero-cake.jpg' %}" alt="Авторский торт от Ильи">
+                    <img src="{% static 'images/ff.jpg' %}" alt="Рекордный торт Рената Агзамова">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Услуги/Что я предлагаю -->
+<!-- О себе (бокс и кондитерия) -->
 <section class="services">
     <div class="container">
         <div class="section-header">
-            <span class="section-subtitle">Что я предлагаю</span>
-            <h2 class="section-title-new">Мои десерты — это <br> маленькое искусство</h2>
+            <span class="section-subtitle">Мой путь</span>
+            <h2 class="section-title-new">От боксерского ринга<br> к мировым рекордам</h2>
         </div>
         <div class="services__grid">
             <div class="service-card">
-                <div class="service-icon">🎂</div>
-                <h3>Торты на заказ</h3>
-                <p>От классических до муссовых — любой дизайн по вашему желанию</p>
+                <div class="service-icon">🥊</div>
+                <h3>Чемпионский характер</h3>
+                <p>Профессиональный бокс научил меня никогда не сдаваться и биться за каждую деталь.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🧁</div>
-                <h3>Капкейки</h3>
-                <p>Нежные капкейки с кремами и топпингами для любого праздника</p>
+                <div class="service-icon">🏆</div>
+                <h3>Мировые рекорды</h3>
+                <p>Самый высокий торт в истории — 4 метра. Вес более 1.5 тонн. Точность до миллиметра.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🍪</div>
-                <h3>Десерты на вынос</h3>
-                <p>Пирожные, эклеры, макаронс — идеально для корпоративов</p>
+                <div class="service-icon">🎨</div>
+                <h3>Торты-искусство</h3>
+                <p>Мои работы выставляются в галереях. Каждый торт — это эксклюзивная скульптура.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">📦</div>
-                <h3>Бесплатная доставка</h3>
-                <p>Доставлю ваш заказ по городу в день события</p>
+                <div class="service-icon">✈️</div>
+                <h3>Работа по всему миру</h3>
+                <p>Создаю шедевры для клиентов из Дубая, Европы, Азии и США.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Популярные десерты -->
+<!-- Знаменитые торты-гиганты -->
+<section class="inspiration" style="background: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%); color: white; padding: 80px 0;">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <span style="color: #D4A5A5; font-size: 48px;">🎂</span>
+            <h2 style="font-size: 36px; margin: 20px 0;">Торт — это не еда. Это эмоция</h2>
+            <p style="font-size: 18px; line-height: 1.6; margin-bottom: 30px;">
+                Я создаю точные копии знаменитых зданий, автомобилей и фонтанов. 
+                Каждая деталь проработана вручную, а на создание одного шедевра уходят недели.
+                Мои торты не едят — ими восхищаются.
+            </p>
+            <p style="font-size: 18px; line-height: 1.6;">
+                «Бокс научил меня дисциплине. Кондитерия — терпению. А результат говорит сам за себя».
+            </p>
+            <div style="margin-top: 30px;">
+                <a href="/portfolio" style="border: 2px solid #D4A5A5; color: #D4A5A5; padding: 12px 35px; border-radius: 50px; text-decoration: none; font-weight: 600;">Посмотреть портфолио →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Шедевры Рената -->
 <section class="popular">
     <div class="container">
         <div class="section-header">
-            <span class="section-subtitle">Популярное</span>
-            <h2 class="section-title-new">Чаще всего заказывают</h2>
+            <span class="section-subtitle">Знаменитые работы</span>
+            <h2 class="section-title-new">Торты, которые установили рекорды</h2>
         </div>
         <div class="popular__grid">
             <div class="popular-card">
                 <div class="popular-image">
-                    <img src="{% static 'images/popular1.jpg' %}" alt="Медовик">
-                    <span class="popular-tag">Хит</span>
+                    <img src="{% static 'images/popular1.jpg' %}" alt="Торт-небоскреб">
+                    <span class="popular-tag">Рекорд высоты</span>
                 </div>
-                <h3>Медовик «Классический»</h3>
-                <p>Нежные корты с кремом «Пломбир»</p>
+                <h3>Торт-небоскрёб 4 метра</h3>
+                <p>Точная копия Бурдж-Халифа. Вес 1.5 тонны.</p>
                 <div class="popular-footer">
-                    <span class="popular-price">2 500 ₽/кг</span>
+                    <span class="popular-price">от $50,000</span>
                     <a href="/order" class="btn-small">Заказать →</a>
                 </div>
             </div>
             <div class="popular-card">
                 <div class="popular-image">
-                    <img src="{% static 'images/popular2.jpg' %}" alt="Красный бархат">
-                    <span class="popular-tag">Хит</span>
+                    <img src="{% static 'images/popular2.jpg' %}" alt="Торт-автомобиль">
+                    <span class="popular-tag">Детализация</span>
                 </div>
-                <h3>Красный бархат</h3>
-                <p>Бархатный бисквит с сырным кремом</p>
+                <h3>Торт «Ferrari»</h3>
+                <p>Полная копия суперкара в натуральную величину.</p>
                 <div class="popular-footer">
-                    <span class="popular-price">3 200 ₽/кг</span>
+                    <span class="popular-price">от $80,000</span>
                     <a href="/order" class="btn-small">Заказать →</a>
                 </div>
             </div>
             <div class="popular-card">
                 <div class="popular-image">
-                    <img src="{% static 'images/popular3.jpg' %}" alt="Наполеон">
+                    <img src="{% static 'images/popular3.jpg' %}" alt="Свадебный торт">
                 </div>
-                <h3>Наполеон</h3>
-                <p>Хрустящие коржи с заварным кремом</p>
+                <h3>Свадебный шедевр</h3>
+                <p>Многоярусный торт с ручной росписью и золотом.</p>
                 <div class="popular-footer">
-                    <span class="popular-price">2 800 ₽/кг</span>
+                    <span class="popular-price">от $15,000</span>
                     <a href="/order" class="btn-small">Заказать →</a>
                 </div>
             </div>
         </div>
         <div class="popular__action">
-            <a href="/catalog" class="btn-gold-outline">Смотреть весь каталог →</a>
-        </div>
-    </div>
-</section>
-
-<!-- Отзывы -->
-<section class="reviews">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-subtitle">Отзывы</span>
-            <h2 class="section-title-new">Что говорят клиенты</h2>
-        </div>
-        <div class="reviews__grid">
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Заказывали торт на свадьбу. Илья сделал всё идеально! Торт был невероятно вкусным и красивым. Гости до сих пор вспоминают."</p>
-                <div class="review-author">
-                    <strong>Анна</strong>
-                    <span>Свадьба, 2 кг</span>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Капкейки на детский день рождения — дети были в восторге! Очень вкусно и красиво оформлено. Спасибо большое!"</p>
-                <div class="review-author">
-                    <strong>Екатерина</strong>
-                    <span>ДР сына, 20 шт</span>
-                </div>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Заказывала корпоратив. Всё свежее, очень вкусное. Илья учёл все пожелания. Обязательно закажу ещё!"</p>
-                <div class="review-author">
-                    <strong>Мария</strong>
-                    <span>Корпоратив</span>
-                </div>
-            </div>
+            <a href="/catalog" class="btn-gold-outline">Смотреть полный прайс →</a>
         </div>
     </div>
 </section>
@@ -161,32 +146,27 @@
 <section class="cta">
     <div class="container">
         <div class="cta__content">
-            <h2>Готовы заказать свой идеальный десерт?</h2>
-            <p>Свяжитесь со мной, и мы обсудим все детали</p>
+            <h2>Хотите создать нечто уникальное?</h2>
+            <p>Свяжитесь со мной, и мы воплотим вашу самую смелую идею в жизнь</p>
             <div class="cta__buttons">
-                <a href="/order" class="btn-white">Заполнить форму</a>
-                <a href="https://t.me/confectioner" target="_blank" class="btn-transparent">Написать в Telegram →</a>
+                <a href="/order" class="btn-white">Обсудить проект</a>
+                <a href="https://t.me/renat_agzamov" target="_blank" class="btn-transparent">Написать в Telegram →</a>
             </div>
         </div>
     </div>
 </section>
 
 <style>
-/* ========== НОВЫЕ СТИЛИ ДЛЯ ГЛАВНОЙ ========== */
-
-/* Hero секция */
 .hero-new {
     padding: 60px 0 40px;
     background: linear-gradient(135deg, #FFF9F5 0%, #FEF5ED 100%);
 }
-
 .hero-new__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
 }
-
 .hero-new__badge {
     display: inline-block;
     background: #D4A5A5;
@@ -196,24 +176,20 @@
     font-size: 14px;
     margin-bottom: 20px;
 }
-
 .hero-new__title {
     font-size: 52px;
     line-height: 1.2;
     margin-bottom: 20px;
 }
-
 .hero-new__title .accent {
     color: #D4A5A5;
 }
-
 .hero-new__desc {
     font-size: 18px;
     color: #666;
     margin-bottom: 30px;
     line-height: 1.6;
 }
-
 .btn-gold {
     background: #D4A5A5;
     color: white;
@@ -225,12 +201,10 @@
     transition: 0.3s;
     margin-right: 15px;
 }
-
 .btn-gold:hover {
     background: #c08a8a;
     transform: translateY(-2px);
 }
-
 .btn-outline {
     border: 2px solid #D4A5A5;
     color: #D4A5A5;
@@ -242,96 +216,56 @@
     transition: 0.3s;
     background: transparent;
 }
-
 .btn-outline:hover {
     background: #D4A5A5;
     color: white;
 }
-
 .hero-new__stats {
     display: flex;
     gap: 40px;
     margin-top: 40px;
 }
-
 .stat {
     text-align: center;
 }
-
 .stat-number {
     display: block;
     font-size: 28px;
     font-weight: 700;
     color: #D4A5A5;
 }
-
 .stat-label {
     font-size: 14px;
     color: #888;
 }
-
-.hero-image-wrapper {
-    position: relative;
-}
-
 .hero-image-wrapper img {
     width: 100%;
     border-radius: 30px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
-
-.floating-card {
-    position: absolute;
-    background: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.card-1 {
-    top: 20%;
-    left: -30px;
-}
-
-.card-2 {
-    bottom: 20%;
-    right: -30px;
-}
-
-/* Services секция */
 .services {
     padding: 80px 0;
     background: white;
 }
-
 .section-header {
     text-align: center;
     margin-bottom: 50px;
 }
-
 .section-subtitle {
     color: #D4A5A5;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .section-title-new {
     font-size: 36px;
     margin-top: 10px;
 }
-
 .services__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
-
 .service-card {
     text-align: center;
     padding: 30px 20px;
@@ -339,40 +273,27 @@
     border-radius: 20px;
     transition: 0.3s;
 }
-
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
-
 .service-icon {
     font-size: 48px;
     margin-bottom: 15px;
 }
-
 .service-card h3 {
     margin-bottom: 10px;
     font-size: 20px;
 }
-
-.service-card p {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-/* Popular секция */
 .popular {
     padding: 80px 0;
     background: #FFF9F5;
 }
-
 .popular__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-
 .popular-card {
     background: white;
     border-radius: 20px;
@@ -380,24 +301,20 @@
     transition: 0.3s;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
-
 .popular-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
-
 .popular-image {
     position: relative;
     height: 220px;
     overflow: hidden;
 }
-
 .popular-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
 .popular-tag {
     position: absolute;
     top: 15px;
@@ -409,31 +326,17 @@
     font-size: 12px;
     font-weight: 600;
 }
-
-.popular-card h3 {
-    padding: 15px 20px 5px;
-    font-size: 18px;
-}
-
-.popular-card p {
-    padding: 0 20px;
-    color: #666;
-    font-size: 14px;
-}
-
 .popular-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px 20px;
 }
-
 .popular-price {
     font-size: 20px;
     font-weight: 700;
     color: #D4A5A5;
 }
-
 .btn-small {
     background: #D4A5A5;
     color: white;
@@ -442,18 +345,11 @@
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    transition: 0.3s;
 }
-
-.btn-small:hover {
-    background: #c08a8a;
-}
-
 .popular__action {
     text-align: center;
     margin-top: 40px;
 }
-
 .btn-gold-outline {
     border: 2px solid #D4A5A5;
     color: #D4A5A5;
@@ -462,84 +358,21 @@
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
-    transition: 0.3s;
 }
-
 .btn-gold-outline:hover {
     background: #D4A5A5;
     color: white;
 }
-
-/* Reviews секция */
-.reviews {
-    padding: 80px 0;
-    background: white;
-}
-
-.reviews__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.review-card {
-    background: #FFF9F5;
-    padding: 30px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.review-card:hover {
-    transform: translateY(-5px);
-}
-
-.review-stars {
-    color: #FFB800;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.review-text {
-    font-style: italic;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-.review-author {
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-}
-
-.review-author strong {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.review-author span {
-    font-size: 12px;
-    color: #999;
-}
-
-/* CTA секция */
 .cta {
     padding: 80px 0;
     background: linear-gradient(135deg, #D4A5A5 0%, #c08a8a 100%);
     color: white;
     text-align: center;
 }
-
 .cta__content h2 {
     font-size: 36px;
     margin-bottom: 15px;
 }
-
-.cta__content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    opacity: 0.9;
-}
-
 .btn-white {
     background: white;
     color: #D4A5A5;
@@ -548,15 +381,8 @@
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
-    transition: 0.3s;
     margin-right: 15px;
 }
-
-.btn-white:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
 .btn-transparent {
     border: 2px solid white;
     color: white;
@@ -564,62 +390,32 @@
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
-    display: inline-block;
-    transition: 0.3s;
     background: transparent;
 }
-
 .btn-transparent:hover {
     background: white;
     color: #D4A5A5;
 }
-
-/* Адаптив */
 @media (max-width: 1024px) {
+    .services__grid, .popular__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .hero-new__title {
         font-size: 42px;
     }
-    
-    .services__grid,
-    .popular__grid,
-    .reviews__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
-
 @media (max-width: 768px) {
     .hero-new__content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
     .hero-new__stats {
         justify-content: center;
     }
-    
-    .hero-new__title {
-        font-size: 36px;
-    }
-    
-    .floating-card {
-        display: none;
-    }
-    
-    .services__grid,
-    .popular__grid,
-    .reviews__grid {
+    .services__grid, .popular__grid {
         grid-template-columns: 1fr;
     }
-    
-    .section-title-new {
-        font-size: 28px;
-    }
-    
-    .cta__content h2 {
-        font-size: 28px;
-    }
-    
-    .btn-gold, .btn-outline, .btn-white, .btn-transparent {
+    .btn-white, .btn-transparent, .btn-gold, .btn-outline {
         display: block;
         margin: 10px auto;
         max-width: 200px;
